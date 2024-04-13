@@ -1,0 +1,47 @@
+flow run /SCVerify/launch_make ./scverify/Verify_orig_cxx_osci.mk {} SIMTOOL=osci sim
+# Making './scverify/Verify_orig_cxx_osci.mk {} SIMTOOL=osci sim'
+# Make utility invoked from '/home/course/ee525201/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/02_edgedetect_fsic/catapult_work/Catapult_8/EdgeDetect_IP_EdgeDetect_Top.v1'
+#     /usr/cadtool/mentor/Catapult/2024.1/Mgc_home/bin/make -f ./scverify/Verify_orig_cxx_osci.mk SIMTOOL=osci build < "/dev/null" (BASIC-15)
+# ============================================
+# Creating simulation directory 'scverify/orig_cxx_osci'
+# mkdir -p scverify/orig_cxx_osci
+# ============================================
+# Compiling C++ file: ../../../hls_c/src/EdgeDetect_tb.cpp
+# /usr/cadtool/mentor/Catapult/2024.1/Mgc_home/bin/g++ -DCCS_SCVERIFY_USE_CCS_BLOCK -DCCS_DUT_SYSC  -DSC_INCLUDE_DYNAMIC_PROCESSES -DSC_USE_STD_STRING -DCCS_MISMATCHED_OUTPUTS_ONLY -DDEADLOCK_DETECTION -std=gnu++11 -Wall -Wno-unknown-pragmas -Wno-unused-label -g -I. -I../../../hls_c/inc -I../../../cmodel/inc -I../../../bmpUtil/inc -I../../../hls_c/inc -I../../../cmodel/inc -I../../../bmpUtil/inc -I../.. -I../../../hls_c/inc -I../../../cmodel/inc -I../../../bmpUtil/inc -I/usr/cadtool/mentor/Catapult/2024.1/Mgc_home/shared/include -I/usr/cadtool/mentor/Catapult/2024.1/Mgc_home/shared/include -I/usr/cadtool/mentor/Catapult/2024.1/Mgc_home/pkgs/hls_pkgs/src -I/usr/cadtool/mentor/Catapult/2024.1/Mgc_home/pkgs/siflibs -I/usr/cadtool/mentor/Catapult/2024.1/Mgc_home/pkgs/hls_pkgs/mgc_comps_src -DSC_USE_STD_STRING  -c ../../../hls_c/src/EdgeDetect_tb.cpp -o scverify/orig_cxx_osci/EdgeDetect_tb.cpp.cxxts.o
+# ../../../hls_c/src/EdgeDetect_tb.cpp: In function ‘int main(int, char**)’:
+# ../../../hls_c/src/EdgeDetect_tb.cpp:122:11: warning: unused variable ‘sumAngErr’ [-Wunused-variable]
+#   122 |     float sumAngErr = 0;
+#       |           ^~~~~~~~~
+# ============================================
+# Compiling C++ file: ../../../bmpUtil/src/bmp_io.cpp
+# /usr/cadtool/mentor/Catapult/2024.1/Mgc_home/bin/g++ -DCCS_SCVERIFY_USE_CCS_BLOCK -DCCS_DUT_SYSC  -DSC_INCLUDE_DYNAMIC_PROCESSES -DSC_USE_STD_STRING -DCCS_MISMATCHED_OUTPUTS_ONLY -DDEADLOCK_DETECTION -std=gnu++11 -Wall -Wno-unknown-pragmas -Wno-unused-label -g -I. -I../../../hls_c/inc -I../../../cmodel/inc -I../../../bmpUtil/inc -I../../../hls_c/inc -I../../../cmodel/inc -I../../../bmpUtil/inc -I../.. -I../../../hls_c/inc -I../../../cmodel/inc -I../../../bmpUtil/inc -I/usr/cadtool/mentor/Catapult/2024.1/Mgc_home/shared/include -I/usr/cadtool/mentor/Catapult/2024.1/Mgc_home/shared/include -I/usr/cadtool/mentor/Catapult/2024.1/Mgc_home/pkgs/hls_pkgs/src -I/usr/cadtool/mentor/Catapult/2024.1/Mgc_home/pkgs/siflibs -I/usr/cadtool/mentor/Catapult/2024.1/Mgc_home/pkgs/hls_pkgs/mgc_comps_src -DSC_USE_STD_STRING  -c ../../../bmpUtil/src/bmp_io.cpp -o scverify/orig_cxx_osci/bmp_io.cpp.cxxts.o
+# ../../../bmpUtil/src/bmp_io.cpp: In function ‘bool bmp_print_test(char*)’:
+# ../../../bmpUtil/src/bmp_io.cpp:1650:13: warning: ‘garray’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+#  1650 |     *garray = *rarray;
+#       |     ~~~~~~~~^~~~~~~~~
+# ../../../bmpUtil/src/bmp_io.cpp:1651:13: warning: ‘barray’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+#  1651 |     *barray = *rarray;
+#       |     ~~~~~~~~^~~~~~~~~
+# ============================================
+# Linking executable
+# /usr/cadtool/mentor/Catapult/2024.1/Mgc_home/bin/g++  -static-libstdc++ -L/usr/cadtool/mentor/Catapult/2024.1/Mgc_home/shared/lib/Linux/gcc-10.3.0-64 -L/usr/cadtool/mentor/Catapult/2024.1/Mgc_home/shared/lib -L/usr/cadtool/mentor/Catapult/2024.1/Mgc_home/shared/lib/Linux/gcc-10.3.0-64 scverify/orig_cxx_osci/EdgeDetect_tb.cpp.cxxts.o scverify/orig_cxx_osci/bmp_io.cpp.cxxts.o -Wl,-Bstatic -lsystemc -Wl,-Bdynamic -lpthread -o scverify/orig_cxx_osci/scverify_top
+#     /usr/cadtool/mentor/Catapult/2024.1/Mgc_home/bin/make -f ./scverify/Verify_orig_cxx_osci.mk SIMTOOL=osci sim (BASIC-14)
+# ============================================
+# Simulating design
+# cd ../..; ./Catapult_8/EdgeDetect_IP_EdgeDetect_Top.v1/scverify/orig_cxx_osci/scverify_top ./image/people640x360_rgb.bmp 1 out_algorithm.bmp out_hw.bmp
+# Loading Input File
+# Input file:          ./image/people640x360_rgb.bmp
+# Mode:                1
+# Output file (alg):   1
+# Output file (hw):    out_hw.bmp
+# Image width: 640
+# Image height: 360
+# ############################################ FRAME NO.   0 ###############################################
+# Running
+# Magnitude: Manhattan norm per pixel 10.470994
+# Writing algorithmic bitmap output to: 1
+# Writing bit-accurate bitmap output to: out_hw.bmp
+# sofErr: 0 eolErr: 0
+# crc32_alg_pix_in  = ebb44e76  crc32_hw_pix_in  = ebb44e76
+# crc32_alg_dat_out = 398625ad  crc32_hw_dat_out = eab7d5b8
+# Finished
