@@ -10,4 +10,4 @@
     * 4_questasim_sim_result
     * 5_tcl_file
   * FSIC
-* Note: Since we didn't have 1R1W ram IP from Xilinx, the FSIC simulation will always be wrong. Hence, we synthesized the hls design with dsign compiler library as 01_edge_detect and ran FSIC simulation for test. The files corresponding to design compiler are added on "_dc_lib," while the vivado one are added on "_vivado_lib" in Catapult directory. 
+* Note: Since we didn't have 1R1W ram IP from Xilinx, the FSIC simulation will always be wrong. Hence, we synthesized the hls design with dsign compiler library as 01_edge_detect and ran FSIC simulation for test. The files corresponding to design compiler are added on "_dc_lib," while the vivado one are added on "_vivado_lib" in Catapult directory. The screeshots of report in Catapult/3_synthesis_report are based on Vivado library.  
