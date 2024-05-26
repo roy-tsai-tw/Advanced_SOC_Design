@@ -1,0 +1,44 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis_HLS/2022.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'ubuntu' on host 'ubuntu2004.linuxvmimages.local' (Linux_x86_64 version 5.15.0-105-generic) on Sun May 12 07:19:45 EDT 2024
+INFO: [HLS 200-10] On os Ubuntu 20.04.4 LTS
+INFO: [HLS 200-10] In directory '/home/ubuntu/asoc-lab_4/fsic_fpga/vivado/vitis_prj/hls_userdma/hls_userdma.prj/solution1'
+Sourcing Tcl script 'script.tcl'
+INFO: [HLS 200-1510] Running: open_project userdma_upsb_1204_refine 
+INFO: [HLS 200-10] Creating and opening project '/home/ubuntu/asoc-lab_4/fsic_fpga/vivado/vitis_prj/hls_userdma/hls_userdma.prj/solution1/userdma_upsb_1204_refine'.
+INFO: [HLS 200-1510] Running: set_top userdma 
+INFO: [HLS 200-1510] Running: add_files userdma.cpp 
+WARNING: [HLS 200-40] Cannot find design file 'userdma.cpp'
+INFO: [HLS 200-1510] Running: add_files userdma.h 
+WARNING: [HLS 200-40] Cannot find design file 'userdma.h'
+INFO: [HLS 200-1510] Running: add_files -tb userdma_test.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+WARNING: [HLS 200-40] Cannot find test bench file 'userdma_test.cpp'
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution '/home/ubuntu/asoc-lab_4/fsic_fpga/vivado/vitis_prj/hls_userdma/hls_userdma.prj/solution1/userdma_upsb_1204_refine/solution1'.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_latency=0
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+./userdma_upsb_1204_refine/solution1/directives.tcl can't be opened.
+couldn't read file "./userdma_upsb_1204_refine/solution1/directives.tcl": no such file or directory
+    while executing
+"source "./userdma_upsb_1204_refine/solution1/directives.tcl""
+    (file "script.tcl" line 15)
+    invoked from within
+"source script.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 [list source $arg] "
+
+INFO: [HLS 200-112] Total CPU user time: 9.45 seconds. Total CPU system time: 1.81 seconds. Total elapsed time: 14.55 seconds; peak allocated memory: 449.551 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Sun May 12 07:19:58 2024...
