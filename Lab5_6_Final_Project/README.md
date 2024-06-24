@@ -9,6 +9,8 @@
   * The original algorithm C model is [Image Signal Process For HDR CMOS Image Sensor](https://github.com/JokerEyeAdas/HDR-ISP).
   * It contains 17 modules for ISP pipeline.
   * Pixels are flowed from one module to another through the ISP pipeline without any additional memory to store them.
+* HDR ISP Pipeline:
+  ![image](https://github.com/roy-tsai-tw/Advanced_SOC_Design/blob/main/Lab5_6_Final_Project/doc/HDRISPpipeline.png)
 * Development steps: 
   * Rewrite the algorithm C model to suit the Catapult implementation flow (from XXX.cpp to XXX.h).
   * Mapping algorithms to architectures for every modules. (Done.)
@@ -22,6 +24,7 @@
   * final-project-presentation_Team7.pdf (Presentation slides)
   * report_Team7.pdf (Report)
   * (Reference papers)
+  * HDRISPpipeline.png (Figures)
 * src/
   * HLS/
     * bin/ (executable folder for top module)
